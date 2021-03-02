@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Geauga Family Dental Care",
-    "currentPage": "index.html",
+    "currentPage": "dentures.html",
     "theme": {
       "name": "medicalm4",
       "title": "MedicalM4",
@@ -2631,222 +2631,54 @@
             "& when (@bg-type = \"image\")": {
               "background-image": "url(@bg-value)"
             },
-            "& when (@mediaLeft)": {
-              ".photo-split": {
-                ".element-outer": {
-                  "display": "none"
-                },
-                ".element-outer2": {
-                  "display": "none"
-                },
-                ".element-inner": {
-                  "display": "none"
+            "img": {
+              "width": "100%",
+              "border-radius": "8px",
+              "box-shadow": "0 0 20px rgba(79, 110, 173, 0.1)"
+            },
+            ".mbr-section-title": {
+              "text-align": "left",
+              "color": "#000000",
+              "letter-spacing": "-0.5px"
+            },
+            ".mbr-text": {
+              "color": "#232323",
+              "line-height": "1.5"
+            },
+            ".display-4": {
+              "letter-spacing": "2px"
+            },
+            ".mbr-list": {
+              "margin-top": "35px",
+              "color": "@infoColor",
+              ".list": {
+                "list-style-type": "none",
+                "padding-left": "0",
+                "li": {
+                  "margin-bottom": "1rem",
+                  "list-style": "✓",
+                  "&:before": {
+                    "& when (@showCounter)": {
+                      "font-weight": "900",
+                      "color": "@counterColor",
+                      "display": "inline-block",
+                      "content": "\"✓\"",
+                      "text-align": "center",
+                      "line-height": "1.5em",
+                      "-webkit-transition": "all 0.3s",
+                      "transition": "all 0.3s",
+                      "width": "25px",
+                      "height": "25px"
+                    }
+                  }
                 }
               }
-            },
-            ".icon-transition span": {
-              "padding": "0.1rem 0.9rem",
-              "border-radius": "50%",
-              "color": "rgb(255, 255, 255)",
-              "display": "block",
-              "height": "3em",
-              "line-height": "3em",
-              "width": "3em",
-              "background": "@circleColor none repeat scroll 0 0",
-              "-webkit-transition": "all 0.3s ease-out 0s",
-              "transition": "all 0.3s ease-out 0s",
-              "font-size": "16px"
-            },
-            ".content-row": {
-              "& when (@mediaLeft)": {
-                "-webkit-box-orient": "horizontal",
-                "-webkit-box-direction": "reverse",
-                "flex-direction": "row-reverse"
-              }
-            },
-            ".photo-split": {
-              "padding-right": "0",
-              ".image-wrap": {
-                "img": {
-                  "width": "100%",
-                  "height": "auto",
-                  "max-height": "800px",
-                  "z-index": "9",
-                  "position": "relative"
-                },
-                "& when (@mediaLeft)": {
-                  "text-align": "right"
-                }
-              },
-              ".element-outer": {
-                "border-radius": "100%",
-                "padding": "60px",
-                "border": "3px dashed @borderColor",
-                "position": "absolute",
-                "z-index": "7",
-                "left": "-50px",
-                "top": "50%",
-                "-webkit-transform": "translateY(-50%)",
-                "transform": "translateY(-50%)"
-              },
-              ".element-outer2": {
-                "border-radius": "100%",
-                "padding": "100px",
-                "border": "3px dashed @borderColor",
-                "position": "absolute",
-                "z-index": "7",
-                "left": "-80px",
-                "top": "50%",
-                "-webkit-transform": "translateY(-50%)",
-                "transform": "translateY(-50%)"
-              },
-              ".element-inner": {
-                "position": "absolute",
-                "z-index": "10",
-                "left": "-22px",
-                "top": "50%",
-                "-webkit-transform": "translateY(-50%)",
-                "transform": "translateY(-50%)",
-                ".widget-icon": {
-                  "display": "inline-block",
-                  "border-radius": "100%",
-                  "padding": "31px",
-                  "background-color": "@circleColor",
-                  "font-size": "2.45rem",
-                  "color": "@primaryColor",
-                  "margin-right": "15px",
-                  "z-index": "10"
-                }
-              }
-            },
-            ".wrap-block": {
-              "padding": "3rem 3rem",
-              ".contents": {
-                "margin-bottom": "40px",
-                "padding-right": "50px",
-                ".mbr-subtitle": {
-                  "color": "@primaryColor",
-                  "margin-bottom": "10px",
-                  "font-weight": "800"
-                },
-                ".mbr-subtitle.display-4": {
-                  "font-size": "13px",
-                  "line-height": "24px",
-                  "letter-spacing": "2px"
-                },
-                ".mbr-section-title": {
-                  "margin-bottom": "10px",
-                  "color": "@secondaryColor",
-                  "line-height": "48px",
-                  "letter-spacing": "-0.5px",
-                  "font-weight": "700"
-                },
-                ".mbr-section-text": {
-                  "line-height": "1.5",
-                  "margin-top": "10px"
-                },
-                ".mbr-section-text.display-7": {
-                  "font-size": "20px"
-                },
-                ".mbr-section-text.display-4": {
-                  "font-size": "18px"
-                },
-                "h3": {
-                  "color": "@secondaryColor",
-                  "letter-spacing": "-0.5px",
-                  "line-height": "30px"
-                },
-                "h4": {
-                  "color": "@infoColor"
-                }
-              }
-            },
-            ".info-widget": {
-              "padding-top": "0.5rem",
-              "display": "flex",
-              "-webkit-box-pack": "start",
-              "justify-content": "flex-start",
-              ".widget-icon": {
-                "display": "inline-block",
-                "border-radius": "100%",
-                "padding": "18px",
-                "background-color": "@circleColor",
-                "font-size": "2.45rem",
-                "color": "@successColor",
-                "margin-right": "15px"
-              },
-              ".signature": {
-                "height": "75px",
-                "display": "inline-block",
-                "margin-right": "15px",
-                "object-fit": "contain"
-              },
-              ".widget-content": {
-                "display": "flex",
-                "vertical-align": "baseline",
-                "text-align": "left",
-                "-webkit-box-orient": "vertical",
-                "-webkit-box-direction": "normal",
-                "flex-direction": "column",
-                "-webkit-box-pack": "center",
-                "justify-content": "center",
-                ".widget-title": {
-                  "margin-bottom": "7px",
-                  "color": "@secondaryColor"
-                },
-                ".widget-text": {
-                  "margin-bottom": "0",
-                  "color": "#7e7e7e"
-                }
-              }
-            },
-            "@media (max-width: 991px)": {
-              ".photo-split": {
-                "padding": "3rem 3rem",
-                ".element-outer, .element-outer2": {
-                  "display": "none"
-                },
-                ".element-inner": {
-                  "left": "0"
-                }
-              }
-            },
-            "@media (max-width: 767px)": {
-              ".mbr-section-title, .mbr-section-subtitle, .mbr-text": {
-                "text-align": "left !important"
-              },
-              ".social-list": {
-                "text-align": "left !important"
-              }
-            },
-            ".boldSubtitle": {
-              "margin-top": "40px !important"
-            },
-            "@media (max-width: 500px)": {
-              ".wrap-block": {
-                "padding": "3rem 1rem"
-              }
-            },
-            ".wrap-block .contents .mbr-section-title, .menu-content-right": {
-              "color": "#232323"
-            },
-            ".wrap-block .contents .mbr-subtitle, .menu-content-right": {
-              "color": "#232323"
-            },
-            ".wrap-block .contents h3, .menu-content-right": {
-              "color": "#232323"
-            },
-            ".wrap-block .contents h4, .menu-content-right": {
-              "color": "#232323"
-            },
-            ".wrap-block .contents h4, .menu-content-right DIV": {
-              "color": "#232323"
             }
           },
-          "_name": "header4",
-          "_customHTML": "<section class=\"header04\" group=\"Additional Blocks\" plugins=\"ViewportChecker\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"9\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n        <header>Show / Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Main Text\" name=\"showMainText\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Signature\" name=\"showSign\">\n        <input type=\"checkbox\" title=\"Icon\" name=\"showIcon\" checked>\n        <input type=\"checkbox\" title=\"Media On Right/Left\" name=\"mediaLeft\">\n\n        <input type=\"color\" title=\"Circle Color\" name=\"circleColor\" value=\"#ffffff\" condition=\"showIcon\">\n        <input type=\"color\" title=\"Border Color\" name=\"borderColor\" value=\"#e3e3e3\" condition=\"showIcon\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background2.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay&&bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container-fluid\">\n        <div class=\"row align-items-center content-row\">\n            <div class=\"col-md-12 col-lg-6 wrap-block\">\n                <div class=\"contents\">\n                    <h2 class=\"mbr-subtitle mbr-fonts-style mbr-bold\" data-app-selector=\".wrap-block .contents .mbr-subtitle, .menu-content-right\" mbr-if=\"showSubtitle\" mbr-theme-style=\"display-4\">OUR SPECIALIZATION</h2>\n                    <h1 class=\"mbr-section-title mbr-fonts-style mbr-bold\" data-app-selector=\".wrap-block .contents .mbr-section-title, .menu-content-right\" mbr-if=\"showTitle\" mbr-theme-style=\"display-2\">Get premium quality dentures</h1>\n                    <h3 class=\"mbr-section-text mbr-fonts-style mbr-bold boldSubtitle\" data-app-selector=\".wrap-block .contents h3, .menu-content-right\" mbr-if=\"showMainText\" mbr-theme-style=\"display-7\">\n                        Dental\n                        implants are the clear choice to replace\n                        missing teeth</h3>\n                    <h4 class=\"mbr-section-text mbr-fonts-style mbr-light\" data-app-selector=\".wrap-block .contents h4, .menu-content-right\" mbr-if=\"showText\" mbr-theme-style=\"display-4\"><br>We offer full and partial maxillary (upper) and mandibular (lower) dentures. Unlike\n<div>many chain practices that offer varying levels of dentures, we only make premier\n</div><div>dentures. We can assure that our dentures will look like your real teeth. We take the\n</div><div>time to ensure they look and feel great to you. We have one laboratory that we use\n</div><div>exclusively and have a strong working relationship with and we know that you will be\n</div><div>pleased with the finished product.<br><div><br></div><br><div>We do not charge for a denture consultation but if you decide to pursue the procedure,\n</div><div>we ask for half of the payment at the start and the final half at the end of treatment.</div><div><br></div><br><div>The entire process, start to finish, for a denture(s) can be anywhere between 3 weeks\n</div></div><div>and 2 months depending upon your situation. Call today!</div><br><div><a href=\"services.html#restaurant-menu2-1x\">View all denture services</a></div></h4>\n                </div>\n                <div class=\"menu-content-right\" mbr-if=\"showSign\">\n                    <div class=\"wrap d-inline-block\">\n                        <div class=\"info-widget\">\n                            <img class=\"signature\" src=\"../_images/img/14.jpg\">\n                            <div class=\"widget-content\" mbr-theme-style=\"display-4\">\n                                <p class=\"widget-title mbr-fonts-style mbr-bold\" data-app-selector=\".info-widget .widget-content .widget-title, .widget-icon\" mbr-theme-style=\"display-7\">Gerald\n                                    Freeman</p>\n                                <p class=\"widget-text mbr-fonts-style\" data-app-selector=\".info-widget .widget-content .widget-text\" mbr-theme-style=\"display-4\">\n                                    Oncologist</p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-md-12 col-lg-6 photo-split\">\n                <div class=\"element-inner\" mbr-if=\"showIcon\">\n                    <span mbr-icon class=\"widget-icon mbr-iconfont icon54-v1-medical-symbol\"></span>\n                </div>\n                <div class=\"element-outer\" mbr-if=\"showIcon\">\n                </div>\n                <div class=\"element-outer2\" mbr-if=\"showIcon\">\n                </div>\n                <div class=\"image-wrap\">\n                    <img src=\"@PROJECT_PATH@/assets/images/smiling-people-1437x1086.jpg\" alt=\"couple smiling with dentures\" title=\"Couple smiling with dentures\">\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "soCZK1mVp2",
-          "_anchor": "header4-1t",
+          "_name": "content3",
+          "_customHTML": "<section class=\"content1\" group=\"Content\" plugins=\"ViewportChecker\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        <header>Show / Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTabTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showTabText\" checked>\n        <input type=\"checkbox\" title=\"List\" name=\"showList\">\n        <input type=\"checkbox\" title=\"List Icon\" name=\"showCounter\" condition=\"showList\" checked>\n        <input type=\"color\" title=\"List Icon Color\" name=\"counterColor\" value=\"#4f87fb\" condition=\"showCounter&&showList\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background2.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay&&bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\" style=\"padding-top:100px;\">\n        <div class=\"row\">\n            <div class=\"col-md-6\">\n                <p class=\"display-4\"><b>OUR SPECIALIZATION</b></p>\n                <h1 class=\"mbr-fonts-style mbr-section-title align-center mbr-bold\" mbr-theme-style=\"display-2\" mbr-if=\"showTabTitle\" data-app-selector=\".mbr-section-title\">Get premium quality dentures</h1>\n                <p class=\"mbr-text pt-4 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTabText\" data-app-selector=\".mbr-text\">We offer full and partial maxillary (upper) and mandibular (lower) dentures. Unlike\nmany chain practices that offer varying levels of dentures, we only make premier\ndentures. We can assure that our dentures will look like your real teeth. We take the\ntime to ensure they look and feel great to you. We have one laboratory that we use\nexclusively and have a strong working relationship with and we know that you will be\npleased with the finished product.\n<br>\n<br>We do not charge for a denture consultation but if you decide to pursue the procedure,\nwe ask for half of the payment at the start and the final half at the end of treatment.\n<br><br>The entire process, start to finish, for a denture(s) can be anywhere between 3 weeks\nand 2 months depending upon your situation. Call today!<br><br><a href=\"services.html#restaurant-menu2-1x\">View all denture services</a></p>\n                <div class=\"mbr-list mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-list,.social-media\" data-multiline mbr-article mbr-if=\"showList\">\n                    <ul class=\"list\" mbr-if=\"showList\">\n                        <li>Our staff carefully monitors changes</li>\n                        <li>We consider a host of factors in making treatment decisions</li>\n                        <li>Aortic aneurysms are most common in men</li>\n                    </ul>\n                </div>\n            </div>\n            <div class=\"col-md-6\">\n                <img src=\"@PROJECT_PATH@/assets/images/smiling-people-1437x1086.jpg\" alt=\"Smiling couple with dentures\" title=\"Smiling couple with dentures\">\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sqweybpYjW",
+          "_anchor": "content3-1x",
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
           "_protectedParams": [],
